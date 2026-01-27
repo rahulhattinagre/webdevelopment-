@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class firstSum {
     public static void main(String[] args) {
-       /*  int n=4;
+        Scanner sc=new Scanner(System.in);
+       int n=sc.nextInt();
         int sum=0;
         for(int i=1;i<=n;i++){
            sum=sum+i;
         }
-         System.out.println("Sum of n:"+sum);*/
+         System.out.println("Sum of n:"+sum);
 
         /*  Scanner sc=new Scanner(System.in);
          int n = sc.nextInt();
@@ -17,7 +18,7 @@ public class firstSum {
             }
          }*/
 
-        Scanner sc=new Scanner(System.in);
+        /*Scanner sc=new Scanner(System.in);
         System.out.println("Enter 2 numbers, either 1 or 0 : ");
         int choice;
         do{
@@ -40,6 +41,6 @@ public class firstSum {
             }
         
         while(choice != 0);
-         System.out.println("Stop propgram");  
+         System.out.println("Stop propgram");  */
     }
 }

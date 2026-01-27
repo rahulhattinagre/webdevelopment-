@@ -5,7 +5,7 @@ public class circle {
             System.out.println("Enter the radius of circle:");
             double radius= sc.nextDouble();
             double diameter = 2 * radius;
-            double area = Math.PI * radius * radius;
+            double area = 3.14 * radius * radius;
 
             System.out.println("Diameter :"+diameter);
             System.out.println("radius:"+radius);

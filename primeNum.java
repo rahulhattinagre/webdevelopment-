@@ -3,31 +3,21 @@ import java.util.Scanner;
 public class primeNum {
 
     // check prime number or not.
-   /* public static void checkPrime(int n) {
-        if (n <= 1) {
-            System.out.println("Not Prime");
+    public static void checkPrime(int n) {
+        if(n<=1){
+            System.out.println("Not Prime ");
             return;
         }
-
-        if (n == 2) {
-            System.out.println("Prime Number");
-            return;
-        }
-
-        if (n % 2 == 0) {
-            System.out.println("Not Prime");
-            return;
-        }
-
-        for (int i = 3; i <= Math.sqrt(n); i += 2) {
-            if (n % i == 0) {
-                System.out.println("Not Prime");
+        int div=2;
+        while(div<n){
+            if(n%div==0){
+                System.out.println("Not Prime ");
                 return;
             }
-        }
-
-        System.out.println("Prime Number");
-    }*/
+                div++;
+            }
+            System.out.println("prime Number");
+    }
    //even odd number check 
 
   /* public static void evenodd(int n) {
@@ -40,16 +30,16 @@ public class primeNum {
    }*/
 
         //Table of given n number
-        public static void table(int n) {
+      /*   public static void table(int n) {
             for(int i=1;i<=10;i++){
                 System.out.println(n+"x"+i+"="+(n*i));
         
             }
             return;
-        }
+        }*/
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        table(n);
+        checkPrime(n);
     }
 }
