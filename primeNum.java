@@ -3,20 +3,17 @@ import java.util.Scanner;
 public class primeNum {
 
     // check prime number or not.
-    public static void checkPrime(int n) {
-        if(n<=1){
-            System.out.println("Not Prime ");
-            return;
+    public static boolean checkPrime(int n) {
+        if(n==2){
+            return true;
         }
-        int div=2;
-        while(div<n){
-            if(n%div==0){
-                System.out.println("Not Prime ");
-                return;
+        for(int i=2;i<=Math.sqrt(n);i++){
+            if(n%i==0){
+              return false;
             }
-                div++;
-            }
-            System.out.println("prime Number");
+        }
+        return true;
+
     }
    //even odd number check 
 
@@ -40,6 +37,6 @@ public class primeNum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        checkPrime(n);
+        System.out.println(checkPrime(n));
     }
 }
