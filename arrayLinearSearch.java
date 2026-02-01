@@ -12,7 +12,7 @@ public class arraysLs {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int [] num={4,3,7,9,18,40,20,18};
-        System.out.println("Enter Key :");
+        System.out.print("Enter Key : ");
         int key=sc.nextInt();
         int index=linearSearch(num, key);
         if(index == -1){
