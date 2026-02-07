@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 public class buyAndSell {
     public static int buyAndSell(int price[]){
         int buyPrice=Integer.MAX_VALUE;
@@ -17,3 +18,24 @@ public class buyAndSell {
         System.out.println("Total Profit : "+buyAndSell(price));
     }   
 }
+=======
+public class buyAndSell {
+    public static int buyAndSell(int price[]){
+        int buyPrice=Integer.MAX_VALUE;
+        int maxProfit=0;
+        for(int i=0;i<price.length;i++){
+            if(buyPrice<price[i]){
+            int profit=price[i]-buyPrice;
+            maxProfit=Math.max(maxProfit, profit);
+            }else{
+                buyPrice=price[i];
+            }
+        }
+        return maxProfit;
+    }
+    public static void main(String[] args) {
+        int price[]={7,1,5,3,6,4};
+        System.out.println("Total Profit : "+buyAndSell(price));
+    }   
+}
+>>>>>>> bd45ea9 (message)
