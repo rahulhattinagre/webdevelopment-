@@ -1,6 +1,6 @@
 import java.util.*;
 
-public Class hollowPattern{
+public class hollowPattern{
 public static void main (String[] arge){
  int n=4;
        int m=5;
@@ -13,6 +13,7 @@ public static void main (String[] arge){
         }
     }
        System.out.println();
+}
 }
 }
 

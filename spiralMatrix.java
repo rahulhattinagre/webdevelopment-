@@ -42,4 +42,3 @@ public class spiralMatrix{
         spiralMatrix(matrix);
     }
 }
-
